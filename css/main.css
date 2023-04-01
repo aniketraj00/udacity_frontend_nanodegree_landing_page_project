@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap);
+@import url(typography.css);
+@import url(utils.css);
+@import url(layout.css);
+@import url(button.css);
+@import url(form.css);
+@import url(nav-section.css);
+@import url(hero-section.css);
+@import url(about-section.css);
+@import url(tour-section.css);
+@import url(review-section.css);
+@import url(booking-section.css);
+
+:root {
+    --color-dark: #383737;
+    --color-light: #f3f3f3;
+    --color-gray: #5e5a5a;
+    --color-primary-100: #D1C4E9;
+    --color-primary-200: #B39DDB;
+    --color-primary-300: #9575CD;
+    --color-primary-400: #7E57C2;
+    --color-primary-500: #673AB7;
+    --color-primary-600: #5E35B1;
+    --color-primary-700: #512DA8;
+    --color-primary-800: #4527A0;
+    --color-primary-900: #311B92;
+    --default-font-size: 14px;
+    --default-navbar-height: 84.75px;
+    --default-navbar-menu-height: 154.4px;
+    --col-w-1x: calc(1 / 12 * 100%);
+    --col-w-2x: calc(2 * var(--col-w-1x));
+    --col-w-3x: calc(3 * var(--col-w-1x));
+    --col-w-4x: calc(4 * var(--col-w-1x));
+    --col-w-5x: calc(5 * var(--col-w-1x));
+    --col-w-6x: calc(6 * var(--col-w-1x));
+    --col-w-7x: calc(7 * var(--col-w-1x));
+    --col-w-8x: calc(8 * var(--col-w-1x));
+    --col-w-9x: calc(9 * var(--col-w-1x));
+    --col-w-10x: calc(10 * var(--col-w-1x));
+    --col-w-11x: calc(11 * var(--col-w-1x));
+    --col-w-12x: calc(12 * var(--col-w-1x));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: var(--default-font-size);
+}
+
+
+/* Active Section, Nav Item Styling */
+.nav-item--active > .nav-link {
+    font-weight: 700;
+}
+
+.section--active {
+    border: 3px solid red;
+}
+
+
+/* Footer Section */
+#footer {
+    padding: 3em 0;
+    background-color: var(--color-dark);
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 0.25em;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    color: var(--color-primary-100);
+}
+
+.footer-newsletter > h2 {
+    font-size: 1.7em;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social img {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.footer-text p:first-child {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.footer-text p{
+    font-size: 0.9em;
+}
+
+.footer-social-links > a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0.25em;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.footer-social-links > a:hover {
+    color: var(--color-primary-100);
+}
+
+@media (max-width: 761px) {
+    #footer {
+        padding-top: 2em;
+        padding-bottom: 0;
+    }
+
+    .footer-newsletter {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links  {
+        display: none
+    }
+
+    .footer-social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}

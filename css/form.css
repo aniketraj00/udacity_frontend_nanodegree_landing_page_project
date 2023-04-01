@@ -1,0 +1,47 @@
+.input-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+
+.input-block {
+    margin-bottom: 0.75em;
+}
+
+.input-block label {
+    display: block;
+    font-size: 0.85em;
+    margin-bottom: 0.5em;
+}
+
+.input-control {
+    display: block;
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1em;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.2em;
+}
+
+.input-control:focus {
+    border: 2px solid var(--color-primary-200);
+}
+
+.input-inline > * {
+    margin-right: 0.3em;
+}
+
+.input-inline > *:last-child {
+    margin-right: 0;
+}
+
+[type="checkbox"].input-control {
+    width: 1.25em;
+    height: 1.25em;
+    display: block;
+    background-color: #fff;
+}
+

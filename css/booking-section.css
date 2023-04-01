@@ -1,0 +1,45 @@
+#book-now {
+    padding: 3em 0;
+    background-color: var(--color-light);
+}
+
+.bookings {
+    margin: 0 auto;
+}
+
+.bookings-header {
+    text-align: center;
+    margin-bottom: 0.2em;
+
+}
+
+.bookings-text {
+    font-size: 1.25em;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+@media (max-width: 761px) {
+    #book-now {
+        padding: 3em 1em;
+    }
+
+    .bookings-header {
+        font-size: 3em;
+    }
+    
+    .bookings-text {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .bookings-header {
+        font-size: 2.5em;
+    }
+
+    .bookings-text {
+        font-size: 0.9em;
+    }
+}
